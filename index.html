@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+  <div id="theme-open" class="fas fa-bars"></div>
+<div class="themes-container">
+
+<div id="theme-close" class="fas fa-times"></div>
+<h3>switch theme</h3>
+<div class="theme-toggler">
+  <span>light</span>
+  <span class="toggler"></span>
+  <span>dark</span>
+</div>
+<h3> pick a color</h3>
+<div class="theme-colors">
+  <div class="color" style="background:#2980b9"></div>
+  <div class="color" style="background:#27ae60;"></div>
+  <div class="color" style="background:#ffa502;"></div>
+  <div class="color" style="background:#8e44ad;"></div>
+  <div class="color" style="background:#0fb9b1;"></div>
+  <div class="color" style="background:#ffd32a;"></div>
+  <div class="color" style="background:#ff0033;"></div>
+  <div class="color" style="background:#e84393;"></div>
+</div>
+
+</div>
+
+<div class="container">
+  <div class="text">
+     Random Password Generator 
+  </div>
+  <div class="wrapper">
+     <div class="input-box">
+        <input type="text" disabled>
+        <!-- <span class="far fa-copy" onclick="copy()"></span> -->
+        <!-- <span class="fa-regular fa-copy"></span> -->
+        <!-- <span class="fa-solid fa-copy far" onclick="copy()"></span> -->
+        <!-- <span class="fas fa-copy" onclick="copy()"></span> -->
+        <!-- <span class="material-symbols-rounded" onclick="copy()">copy_all</span> -->
+     </div>
+     <div class="pass-indicator">
+     </div>
+     <div class="indcator-text my-2">
+         <span >strong</span>
+     </div>
+    
+     <div class="pass-length">
+         <div class="details">
+           <label for="" class="tittle">Password Length</label>
+           <span>30</span>
+         </div>
+         <input type="range" min="1" max="30" step="1" value="30">
+     </div>
+     <div class="pass-setting">
+         <label for="" class="tittle">Password Setting</label>
+         <ul class="options">
+             <li class="option">
+                 <input type="checkbox" name="" id="lowercase" checked >
+                 <label for="lowercase">lowercase(a-z)</label>
+
+             </li>
+             <li class="option">
+                 <input type="checkbox" name="" id="uppercase">
+                 <label for="uppercase">Uppercase(A-Z)</label>
+
+             </li>
+             <li class="option">
+                 <input type="checkbox" name="" id="number">
+                 <label for="number">Numbers(0-9)</label>
+
+             </li>
+
+             <li class="option">
+                 <input type="checkbox" name="" id="spaces">
+                 <label for="spaces">Include Spaces</label>
+
+             </li>
+             <li class="option">
+                 <input type="checkbox" name="" id="symbols">
+                 <label for="symbols">Symbols(!_-$^%&*+@#)</label>
+
+             </li>
+         </ul>
+
+     </div>
+     <button class="btn btn-primary">Generate Password</button>
+  </div>
+</div>
+
+ <script src="./js/bootstrap.bundle.min.js"></script>
+ <script src="./js/script.js"></script>   
+</body>
+</html>
